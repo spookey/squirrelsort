@@ -12,6 +12,7 @@ void printList(int16_t* point, uint8_t len) {
             1 + idx != len ? ", " : " ]"
         );
     }
+    std::cout << std::flush;
 }
 
 void printList(std::string text, int16_t* point, uint8_t len) {

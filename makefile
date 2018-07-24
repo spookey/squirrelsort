@@ -5,11 +5,13 @@ THESRC = $(wildcard src/*.cpp)
 OBJ = $(LIBSRC:.cpp=.o) $(SRTSRC:.cpp=.o) $(THESRC:.cpp=.o)
 EXE = squirrelsort
 
-CCFLAGS = -std=c++11 -pedantic -Wall
+CCFLAGS = -std=c++11 -pedantic -Wall -Wextra
 CC = g++
 LDFLAGS =
 
 .PHONY: run clean
+
+build: $(EXE)
 
 run: $(EXE)
 	@./$(EXE)
@@ -23,4 +25,4 @@ $(EXE): $(OBJ)
 
 
 clean:
-	rm -f $(OBJ) $(EXE)
+	@rm -f $(OBJ) $(EXE)

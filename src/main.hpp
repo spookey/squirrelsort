@@ -14,7 +14,7 @@ void compute(
         int16_t* origin, uint8_t len,
         std::string text, void (*sort)(int16_t* , uint8_t)
 );
-void action(int16_t* origin);
+void action(int16_t* origin, uint8_t len);
 
 int32_t main(int32_t argc, char** argv);
 

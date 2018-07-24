@@ -27,6 +27,9 @@ void action(int16_t* origin, uint8_t len) {
 
 
 int32_t main(int32_t argc, char** argv) {
+    (void)argc;
+    (void)argv;
+
     initRnd();
 
     int16_t *origin = new int16_t[ARR_LENGTH];
