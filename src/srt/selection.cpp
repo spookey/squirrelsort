@@ -10,9 +10,7 @@ void selectionSort(int16_t* point, uint8_t len) {
         }
 
         if (min != idx) {
-            int16_t temp = point[idx];
-            point[idx] = point[min];
-            point[min] = temp;
+            std::swap(point[idx], point[min]);
         }
     }
 }

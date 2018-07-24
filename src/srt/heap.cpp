@@ -13,9 +13,7 @@ void heapify(int16_t* point, uint8_t len, uint8_t pos) {
     }
 
     if (top != pos) {
-        int16_t temp = point[top];
-        point[top] = point[pos];
-        point[pos] = temp;
+        std::swap(point[top], point[pos]);
 
         heapify(point, len, top);
     }
@@ -26,9 +24,7 @@ void heapSort(int16_t* point, uint8_t len) {
         heapify(point, len, idx - 1);
     }
     for (uint8_t idx = len; idx > 0; idx--) {
-        int16_t temp = point[idx - 1];
-        point[idx - 1] = point[0];
-        point[0] = temp;
+        std::swap(point[idx - 1], point[0]);
 
         heapify(point, idx - 1, 0);
     }
