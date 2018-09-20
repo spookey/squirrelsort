@@ -25,4 +25,4 @@ $(EXE): $(OBJ)
 
 
 clean:
-	@rm -f $(OBJ) $(EXE)
+	@rm -fv $(OBJ) $(EXE)

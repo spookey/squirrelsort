@@ -15,7 +15,7 @@ makefile
 
 This project comes with some standard makefile.
 
-* ``make squirrelsort``
+* ``make build``
     * build executable
 
 * ``make run``
