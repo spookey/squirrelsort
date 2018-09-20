@@ -16,6 +16,7 @@ void action(int16_t* origin, uint8_t len) {
     printList("unsorted", origin, len);
 
     compute(origin, len, "bubble", bubbleSort);
+    compute(origin, len, "comb", combSort);
     compute(origin, len, "heap", heapSort);
     compute(origin, len, "insertion", insertionSort);
     compute(origin, len, "merge", mergeSort);

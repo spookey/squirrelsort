@@ -3,6 +3,7 @@
 
 #include "lib/share.hpp"
 #include "srt/bubble.hpp"
+#include "srt/comb.hpp"
 #include "srt/heap.hpp"
 #include "srt/insertion.hpp"
 #include "srt/merge.hpp"
