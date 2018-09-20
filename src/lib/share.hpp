@@ -12,13 +12,13 @@
 
 void initRnd(void);
 
-void printList(int16_t* point, uint8_t len);
-void printList(std::string text, int16_t* point, uint8_t len);
+void printList(int16_t* point, uint32_t len);
+void printList(std::string text, int16_t* point, uint32_t len);
 
-void copyList(int16_t* origin, int16_t* duplicate, uint8_t len);
+void copyList(int16_t* origin, int16_t* duplicate, uint32_t len);
 
-void makeListRev(int16_t* origin, uint8_t len);
-void makeListNeg(int16_t* origin, uint8_t len);
-void makeListRnd(int16_t* origin, uint8_t len, uint16_t peak);
+void makeListRev(int16_t* origin, uint32_t len);
+void makeListNeg(int16_t* origin, uint32_t len);
+void makeListRnd(int16_t* origin, uint32_t len, uint16_t peak);
 
 #endif

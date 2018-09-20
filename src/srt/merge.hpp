@@ -4,8 +4,8 @@
 #include <cmath>
 #include <cstdint>
 
-void merge(int16_t* point, uint8_t lpos, uint8_t middle, uint8_t rpos);
-void mergeSort(int16_t* point, uint8_t lpos, uint8_t rpos);
-void mergeSort(int16_t* point, uint8_t len);
+void merge(int16_t* point, uint32_t lpos, uint32_t middle, uint32_t rpos);
+void mergeSort(int16_t* point, uint32_t lpos, uint32_t rpos);
+void mergeSort(int16_t* point, uint32_t len);
 
 #endif

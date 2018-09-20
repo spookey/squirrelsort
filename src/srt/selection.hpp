@@ -4,6 +4,6 @@
 #include <algorithm>
 #include <cstdint>
 
-void selectionSort(int16_t* point, uint8_t len);
+void selectionSort(int16_t* point, uint32_t len);
 
 #endif

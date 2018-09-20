@@ -5,6 +5,6 @@
 #include <cmath>
 #include <cstdint>
 
-void combSort(int16_t* point, uint8_t len);
+void combSort(int16_t* point, uint32_t len);
 
 #endif

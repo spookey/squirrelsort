@@ -3,6 +3,6 @@
 
 #include <cstdint>
 
-void insertionSort(int16_t* point, uint8_t len);
+void insertionSort(int16_t* point, uint32_t len);
 
 #endif

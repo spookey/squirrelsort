@@ -1,10 +1,10 @@
 #include "quick.hpp"
 
-void quickSort(int16_t* point, uint8_t lpos, uint8_t rpos) {
-    int16_t ll = lpos;
-    int16_t rr = rpos;
+void quickSort(int16_t* point, uint32_t lpos, uint32_t rpos) {
+    int64_t ll = lpos;
+    int64_t rr = rpos;
 
-    uint8_t mid = floor(lpos + (rpos - lpos) / 2);
+    uint32_t mid = floor(lpos + (rpos - lpos) / 2);
     int16_t pivot = point[mid];
 
     while (ll <= rr) {
@@ -31,6 +31,6 @@ void quickSort(int16_t* point, uint8_t lpos, uint8_t rpos) {
     }
 }
 
-void quickSort(int16_t* point, uint8_t len) {
+void quickSort(int16_t* point, uint32_t len) {
     quickSort(point, 0, len - 1);
 }

@@ -1,9 +1,9 @@
 #include "heap.hpp"
 
-void heapify(int16_t* point, uint8_t len, uint8_t pos) {
-    uint8_t top = pos;
-    uint8_t ll = 2 * pos + 1;
-    uint8_t rr = 2 * pos + 2;
+void heapify(int16_t* point, uint32_t len, uint32_t pos) {
+    uint32_t top = pos;
+    uint32_t ll = 2 * pos + 1;
+    uint32_t rr = 2 * pos + 2;
 
     if (ll < len && point[ll] > point[top]) {
         top = ll;
@@ -19,11 +19,11 @@ void heapify(int16_t* point, uint8_t len, uint8_t pos) {
     }
 }
 
-void heapSort(int16_t* point, uint8_t len) {
-    for (uint8_t idx = floor(len / 2); idx > 0; idx--) {
+void heapSort(int16_t* point, uint32_t len) {
+    for (uint32_t idx = floor(len / 2); idx > 0; idx--) {
         heapify(point, len, idx - 1);
     }
-    for (uint8_t idx = len; idx > 0; idx--) {
+    for (uint32_t idx = len; idx > 0; idx--) {
         std::swap(point[idx - 1], point[0]);
 
         heapify(point, idx - 1, 0);

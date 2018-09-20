@@ -5,7 +5,7 @@
 #include <cmath>
 #include <cstdint>
 
-void quickSort(int16_t* point, uint8_t lpos, uint8_t rpos);
-void quickSort(int16_t* point, uint8_t len);
+void quickSort(int16_t* point, uint32_t lpos, uint32_t rpos);
+void quickSort(int16_t* point, uint32_t len);
 
 #endif

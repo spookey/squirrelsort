@@ -4,6 +4,6 @@
 #include <cmath>
 #include <cstdint>
 
-void shellSort(int16_t* point, uint8_t len);
+void shellSort(int16_t* point, uint32_t len);
 
 #endif

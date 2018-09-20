@@ -1,8 +1,8 @@
 #include "main.hpp"
 
 void compute(
-        int16_t* origin, uint8_t len,
-        std::string text, void (*sort)(int16_t* , uint8_t)
+        int16_t* origin, uint32_t len,
+        std::string text, void (*sort)(int16_t* , uint32_t)
 ) {
     int16_t *result = new int16_t[len];
     copyList(origin, result, len);
@@ -12,7 +12,7 @@ void compute(
 }
 
 
-void action(int16_t* origin, uint8_t len) {
+void action(int16_t* origin, uint32_t len) {
     printList("unsorted", origin, len);
 
     compute(origin, len, "bubble", bubbleSort);
