@@ -21,6 +21,7 @@ void action(int16_t* origin, uint8_t len) {
     compute(origin, len, "merge", mergeSort);
     compute(origin, len, "quick", quickSort);
     compute(origin, len, "selection", selectionSort);
+    compute(origin, len, "shell", shellSort);
 
     std::cout << std::endl;
 }

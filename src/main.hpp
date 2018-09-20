@@ -8,6 +8,7 @@
 #include "srt/merge.hpp"
 #include "srt/quick.hpp"
 #include "srt/selection.hpp"
+#include "srt/shell.hpp"
 
 
 void compute(
