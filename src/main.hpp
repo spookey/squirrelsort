@@ -12,9 +12,10 @@
 #include "srt/shell.hpp"
 
 
-void compute(
+bool compute(
         int16_t* origin, uint32_t len,
-        std::string text, void (*sort)(int16_t* , uint32_t)
+        void (*sort)(int16_t* , uint32_t),
+        std::string text
 );
 void action(int16_t* origin, uint32_t len);
 

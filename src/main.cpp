@@ -1,28 +1,38 @@
 #include "main.hpp"
 
-void compute(
+bool compute(
         int16_t* origin, uint32_t len,
-        std::string text, void (*sort)(int16_t* , uint32_t)
+        void (*sort)(int16_t* , uint32_t),
+        std::string text
 ) {
-    int16_t *result = new int16_t[len];
-    copyList(origin, result, len);
-    sort(result, len);
-    printList(text, result, len);
-    delete [] result;
+    int16_t *target = new int16_t[len];
+    copyList(origin, target, len);
+    sort(target, len);
+    bool result = checkList(origin, len);
+
+    std::string sres =
+        std::string("(") +
+        (result ? "ok" : "error") +
+        std::string(") - ") +
+        text;
+    printList(sres, target, len);
+
+    delete [] target;
+    return result;
 }
 
 
 void action(int16_t* origin, uint32_t len) {
     printList("unsorted", origin, len);
 
-    compute(origin, len, "bubble", bubbleSort);
-    compute(origin, len, "comb", combSort);
-    compute(origin, len, "heap", heapSort);
-    compute(origin, len, "insertion", insertionSort);
-    compute(origin, len, "merge", mergeSort);
-    compute(origin, len, "quick", quickSort);
-    compute(origin, len, "selection", selectionSort);
-    compute(origin, len, "shell", shellSort);
+    compute(origin, len, bubbleSort, "bubble");
+    compute(origin, len, combSort, "comb");
+    compute(origin, len, heapSort, "heap");
+    compute(origin, len, insertionSort, "insertion");
+    compute(origin, len, mergeSort, "merge");
+    compute(origin, len, quickSort, "quick");
+    compute(origin, len, selectionSort, "selection");
+    compute(origin, len, shellSort, "shell");
 
     std::cout << std::endl;
 }
