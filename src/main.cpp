@@ -8,7 +8,7 @@ bool compute(
     int16_t *target = new int16_t[len];
     copyList(origin, target, len);
     sort(target, len);
-    bool result = checkList(origin, len);
+    bool result = checkList(target, len);
 
     std::string sres =
         std::string("(") +

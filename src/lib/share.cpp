@@ -29,11 +29,8 @@ void copyList(int16_t* origin, int16_t* duplicate, uint32_t len) {
 
 
 bool checkList(int16_t* origin, uint32_t len) {
-    int16_t last = INT16_MAX;
-    int16_t curr;
-    while (len--) {
-        curr = origin[len];
-        if (curr > last) {
+    for (uint32_t idx = 1; idx < len; idx++) {
+        if (origin[idx] < origin[idx - 1]) {
             return false;
         }
     }
