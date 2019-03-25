@@ -5,6 +5,22 @@ void initRnd(void) {
 }
 
 
+void printEnd(void) {
+    std::cout << std::endl;
+}
+
+void printText(std::string text) {
+    std::cout << std::endl << text << ":";
+}
+
+void printTime(std::string text, double time) {
+    printText(text);
+    std::cout << "\t" <<
+        std::setw(FMT_TIME) <<
+        std::setprecision(PRC_TIME) <<
+        time;
+}
+
 void printList(int16_t* point, uint32_t len) {
     std::cout << std::endl << "[ ";
     for (uint32_t idx = 0; idx < len; idx++) {
@@ -16,7 +32,7 @@ void printList(int16_t* point, uint32_t len) {
 }
 
 void printList(std::string text, int16_t* point, uint32_t len) {
-    std::cout << std::endl << text << ":";
+    printText(text);
     printList(point, len);
 }
 
@@ -56,4 +72,13 @@ void makeListRnd(int16_t* origin, uint32_t len, uint16_t peak) {
             rand() % peak * (rand() % 2 ? -1 : +1)
         );
     }
+}
+
+
+HIGH_POINT startTime(void) {
+    return std::chrono::high_resolution_clock::now();
+}
+
+double stopTime(HIGH_POINT start) {
+    return (startTime() - start).count();
 }

@@ -13,11 +13,14 @@
 
 
 bool compute(
-        int16_t* origin, uint32_t len,
+        int16_t* origin, uint32_t len, bool prepare,
         void (*sort)(int16_t* , uint32_t),
         std::string text
 );
-void action(int16_t* origin, uint32_t len);
+void action(int16_t* origin, uint32_t len, bool prepare);
+
+void printer(void);
+void marker(void);
 
 int32_t main(int32_t argc, char** argv);
 
