@@ -5,7 +5,17 @@ THESRC = $(wildcard src/*.cpp)
 OBJ = $(LIBSRC:.cpp=.o) $(SRTSRC:.cpp=.o) $(THESRC:.cpp=.o)
 EXE = squirrelsort
 
-CCFLAGS = -std=c++11 -pedantic -Wall -Wextra
+CCFLAGS = -std=c++11 \
+	-pedantic \
+	-Wall \
+	-Wconversion \
+	-Weverything \
+	-Wextra \
+	-Wshadow \
+	-Wundef \
+	-Wvla \
+	-Wno-c++98-compat
+
 CC = g++
 LDFLAGS =
 

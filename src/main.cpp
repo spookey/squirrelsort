@@ -60,7 +60,7 @@ void printer(void) {
 
     for (
         uint8_t peakPos = 0;
-        peakPos < sizeof(peaksRnd)/sizeof(int16_t);
+        peakPos < sizeof(peaksRnd)/sizeof(uint16_t);
         peakPos++
     ) {
         makeListRnd(origin, len, peaksRnd[peakPos]);

@@ -1,5 +1,5 @@
-#ifndef __selection_hpp__
-#define __selection_hpp__
+#ifndef _selection_hpp_
+#define _selection_hpp_
 
 #include <algorithm>
 #include <cstdint>

@@ -1,5 +1,5 @@
-#ifndef __quick_hpp__
-#define __quick_hpp__
+#ifndef _quick_hpp_
+#define _quick_hpp_
 
 #include <algorithm>
 #include <cmath>

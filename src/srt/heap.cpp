@@ -20,10 +20,18 @@ void heapify(int16_t* point, uint32_t len, uint32_t pos) {
 }
 
 void heapSort(int16_t* point, uint32_t len) {
-    for (uint32_t idx = floor(len / 2); idx > 0; idx--) {
+    for (
+        uint32_t idx = static_cast<uint32_t>(floor(len / 2));
+        idx > 0;
+        idx--
+    ) {
         heapify(point, len, idx - 1);
     }
-    for (uint32_t idx = len; idx > 0; idx--) {
+    for (
+        uint32_t idx = len;
+        idx > 0;
+        idx--
+    ) {
         std::swap(point[idx - 1], point[0]);
 
         heapify(point, idx - 1, 0);

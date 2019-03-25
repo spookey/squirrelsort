@@ -1,5 +1,5 @@
-#ifndef __merge_hpp__
-#define __merge_hpp__
+#ifndef _merge_hpp_
+#define _merge_hpp_
 
 #include <cmath>
 #include <cstdint>

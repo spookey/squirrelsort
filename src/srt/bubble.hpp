@@ -1,5 +1,5 @@
-#ifndef __bubble_hpp__
-#define __bubble_hpp__
+#ifndef _bubble_hpp_
+#define _bubble_hpp_
 
 #include <cstdint>
 

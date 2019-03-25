@@ -1,5 +1,5 @@
-#ifndef __comb_hpp__
-#define __comb_hpp__
+#ifndef _comb_hpp_
+#define _comb_hpp_
 
 #include <algorithm>
 #include <cmath>

@@ -1,5 +1,5 @@
-#ifndef __heap_hpp__
-#define __heap_hpp__
+#ifndef _heap_hpp_
+#define _heap_hpp_
 
 #include <algorithm>
 #include <cmath>

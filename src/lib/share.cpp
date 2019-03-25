@@ -1,7 +1,7 @@
 #include "share.hpp"
 
 void initRnd(void) {
-    srand(time(NULL));
+    srand(static_cast<unsigned int>(time(nullptr)));
 }
 
 
@@ -56,13 +56,13 @@ bool checkList(int16_t* origin, uint32_t len) {
 
 void makeListRev(int16_t* origin, uint32_t len) {
     for (uint32_t idx = 0; idx < len; idx++) {
-        origin[idx] = len - idx - 1;
+        origin[idx] = static_cast<int16_t>(len - idx - 1);
     }
 }
 
 void makeListNeg(int16_t* origin, uint32_t len) {
     for (uint32_t idx = 0; idx < len; idx++) {
-        origin[idx] = -idx;
+        origin[idx] = static_cast<int16_t>(-idx);
     }
 }
 

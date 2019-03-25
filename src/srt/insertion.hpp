@@ -1,5 +1,5 @@
-#ifndef __insertion_hpp__
-#define __insertion_hpp__
+#ifndef _insertion_hpp_
+#define _insertion_hpp_
 
 #include <cstdint>
 

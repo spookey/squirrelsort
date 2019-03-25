@@ -47,7 +47,7 @@ void merge(int16_t* point, uint32_t lpos, uint32_t middle, uint32_t rpos) {
 
 void mergeSort(int16_t* point, uint32_t lpos, uint32_t rpos) {
     if (lpos < rpos) {
-        uint32_t middle = floor((lpos + rpos) / 2);
+        uint32_t middle = static_cast<uint32_t>(floor((lpos + rpos) / 2));
         mergeSort(point, lpos, middle);
         mergeSort(point, middle + 1, rpos);
 

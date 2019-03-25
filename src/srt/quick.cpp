@@ -4,7 +4,7 @@ void quickSort(int16_t* point, uint32_t lpos, uint32_t rpos) {
     int64_t ll = lpos;
     int64_t rr = rpos;
 
-    uint32_t mid = floor(lpos + (rpos - lpos) / 2);
+    uint32_t mid = static_cast<uint32_t>(floor(lpos + (rpos - lpos) / 2));
     int16_t pivot = point[mid];
 
     while (ll <= rr) {
@@ -24,10 +24,10 @@ void quickSort(int16_t* point, uint32_t lpos, uint32_t rpos) {
     }
 
     if (lpos < rr) {
-        quickSort(point, lpos, rr);
+        quickSort(point, lpos, static_cast<uint32_t>(rr));
     }
     if (ll < rpos) {
-        quickSort(point, ll, rpos);
+        quickSort(point, static_cast<uint32_t>(ll), rpos);
     }
 }
 

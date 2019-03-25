@@ -1,5 +1,5 @@
-#ifndef __shell_hpp__
-#define __shell_hpp__
+#ifndef _shell_hpp_
+#define _shell_hpp_
 
 #include <cmath>
 #include <cstdint>

@@ -1,5 +1,5 @@
-#ifndef __share_hpp__
-#define __share_hpp__
+#ifndef _share_hpp_
+#define _share_hpp_
 
 #include <chrono>
 #include <cstdint>
@@ -14,10 +14,10 @@
 
 #define DISPLAY_LENGTH  16
 
-#define _CH             std::chrono
-#define HIGH_POINT      _CH::time_point<_CH::high_resolution_clock>
+#define CHRONO          std::chrono
+#define HIGH_POINT      CHRONO::time_point<CHRONO::high_resolution_clock>
 
-const int16_t peaksRnd[3] = {99, 999, 9999};
+const uint16_t peaksRnd[3] = {99, 999, 9999};
 const uint32_t lensBench[7] = {64, 128, 256, 512, 1024, 2048, 4096};
 
 

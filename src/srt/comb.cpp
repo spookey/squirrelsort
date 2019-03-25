@@ -6,8 +6,8 @@ void combSort(int16_t* point, uint32_t len) {
 
     while (gap != 1 || swapped == true) {
 
-        int16_t tmp_gap = floor((gap * 10) / 13);
-        gap = (tmp_gap < 1 ? 1 : (uint32_t) tmp_gap);
+        int16_t tmp_gap = static_cast<int16_t>(floor((gap * 10) / 13));
+        gap = (tmp_gap < 1 ? 1 : static_cast<uint32_t>(tmp_gap));
 
         swapped = false;
 

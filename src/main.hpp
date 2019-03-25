@@ -1,5 +1,5 @@
-#ifndef __main_hpp__
-#define __main_hpp__
+#ifndef _main_hpp_
+#define _main_hpp_
 
 #include "lib/share.hpp"
 #include "srt/bubble.hpp"
